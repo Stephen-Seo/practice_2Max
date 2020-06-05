@@ -9,11 +9,10 @@ typedef struct SimpleVector {
 } SimpleVector;
 
 void sv_init(SimpleVector *sv, unsigned int capacity) {
-    if(!sv->data) {
-        sv->data = (int*)malloc(capacity * sizeof(int));
-        sv->capacity = capacity;
-        sv->size = 0;
-    }
+    memset(sv, 0, sizeof(SimpleVector));
+    sv->data = (int*)malloc(capacity * sizeof(int));
+    sv->capacity = capacity;
+    sv->size = 0;
 }
 
 void sv_cleanup(SimpleVector *sv) {
@@ -74,7 +73,6 @@ int is_digit_sum_equal(int a, int b) {
 
 int main(int argc, char **argv) {
     SimpleVector sv;
-    memset(&sv, 0, sizeof(SimpleVector));
     sv_init(&sv, 32);
 
     int temp_i;
