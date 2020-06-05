@@ -95,7 +95,7 @@ int main(int argc, char **argv) {
     sv_print(&sv);
 
     // Actually do the problem here
-    temp_i = 0;
+    temp_i = -1;
     int temp_sum;
     for(unsigned int i = 0; i < sv.size; ++i) {
         for(unsigned int j = i + 1; j < sv.size; ++j) {
