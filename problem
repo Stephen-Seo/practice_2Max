@@ -1,0 +1,12 @@
+Today’s exercise comes from Stack Overflow:
+
+Given an array A consisting of N integers, return the maximum sum of two numbers
+whose digits add up to an equal sum. If there are not two numbers whose digits
+have an equal sum, the function should return -1. For example, A = [51, 71, 17,
+42] would output 93 because there are two sets of numbers with the same
+digit-sum, (51, 42) with a digit-sum of 6 and (17, 71) with a digit-sum of 8,
+and the first pair has the maximum sum of two numbers of 93.
+
+Your task is to write a program to calculated the requested maximum sum. When
+you are finished, you are welcome to read or run a suggested solution, or to
+post your own solution or discuss the exercise in the comments below.
